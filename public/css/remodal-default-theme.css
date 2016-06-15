@@ -62,6 +62,7 @@
 
 .remodal p{
   font-family: RobotoR;
+  text-align: justify;
 }
 .remodal.remodal-is-opening,
 .remodal.remodal-is-closing {
