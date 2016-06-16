@@ -34,7 +34,7 @@ a{
   min-height: 100vh;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 #mainNav{
   font-family: RobotoCB;
@@ -123,7 +123,7 @@ a{
   padding-bottom: 20px;
 }
 #Informacion .icons{
-  width: 60%;
+  height: 90px;
 }
 #Informacion a{
   color: #fff;
@@ -135,13 +135,75 @@ a{
 }
 #Informacion .nav-tabs-titles{
   font-family: RobotoL;
-  border-bottom: 1px solid #fff;
+  border-bottom: 0px solid #fff;
   padding-bottom: 15px;
 }
+
+#Informacion .preciosI{
+  padding: 15px 5px 15px 5px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+#Informacion .informacionPrecios{
+  text-align: center;
+  margin: 10px 0;
+}
+#Informacion .informacionPrecios span{
+  font-size: 15px;
+}
+#ubicacionFecha .ubicacionFechaText{
+  font-size: 18px;
+  font-family: RobotoCR;
+}
+#ubicacionFecha .ubicacionFechaText p{
+  margin: 0;
+}
+#ubicacionFecha .ubicacionFechaDireccion {
+  margin-top: 15px;
+  text-align: left;
+  font-size: 12px;
+  font-family: RobotoR;
+}
+#ubicacionFecha .ubicacionFechaFechas{
+  margin-top: 15px;
+  text-align: left;
+  font-size: 15px;
+  font-family: RobotoR;
+}
+#ubicacionFecha .comInfo{
+  margin-top: 20px;
+}
+.agenda {  }
+
+/* Dates */
+.agenda .agenda-date { width: 170px; }
+.agenda .agenda-date .dayofmonth {
+  width: 40px;
+  font-size: 36px;
+  line-height: 36px;
+  float: left;
+  text-align: right;
+  margin-right: 10px;
+}
+.agenda .agenda-date .shortdate {
+  font-size: 0.75em;
+}
+
+
+/* Times */
+.agenda .agenda-time { width: 140px; }
+
+
+/* Events */
+.agenda .agenda-events {  }
+.agenda .agenda-events .agenda-event {  }
 
 #Contacto{
   background-color: #57585a;
   color: #fff;
+  text-align: center;
+}
+.footer{
   text-align: center;
 }
 .arrow {
@@ -191,6 +253,10 @@ a{
 .col-xs-15 {
     width: 20%;
     float: left;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: transparent;
 }
 .navbar-toggle{
   border: 0px solid black;

@@ -16,8 +16,27 @@ App.controller('main-controller', ['$scope', function($scope) {
      $('#mainNav').fadeOut();
    }
  });
- 
 
+  $("a").click(function(event) {
+    event.preventDefault();
+    $('html,body').animate( {
+      scrollTop: $(this.hash).offset().top - 49
+    } , 1000);
+  });
+
+  jQuery(document).ready(function ($) {
+    $('.nav a').click(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+
+    $('a.scroll').on('click', function (e) { //Scroll down a informacion
+      $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top - 250
+      }, 1000);
+      e.preventDefault();
+    });
+  });
   $scope.conferencistas = [
             {
                 no: 1,
@@ -138,4 +157,48 @@ App.controller('main-controller', ['$scope', function($scope) {
             },
 
         ];
+  $scope.informacionIcons = [
+    {
+      icon_url: "img/icons/icon_travel_locations.png",
+      nombre:"UBICACION & FECHAS",
+      id: "ubicacionFecha"
+    },
+    {
+      icon_url: "img/icons/icon_travel_registration.png",
+      nombre:"REGISTRO",
+      id: "registro"
+    },
+    {
+      icon_url: "img/icons/icon_travel_agenda.png",
+      nombre:"AGENDA",
+      id: "agenda"
+    },
+    {
+      icon_url: "img/icons/icon_travel_pricing.png",
+      nombre:"PRECIOS",
+      id: "precios"
+    },
+  ]
+  $scope.informacionPrecios = [
+    {
+      nombre: "INDIVIDUAL",
+      icon_url:"img/icons/icon_register.png",
+      needed: "1 Persona",
+      precio: 550
+    },
+    {
+      nombre: "GRUPOS",
+      icon_url:"img/icons/icon_register_group.png",
+      needed: "+ 10 Personas",
+      precio: 500,
+      ex: "c/u"
+    },
+    {
+      nombre: "ESTUDIANTES",
+      icon_url:"img/icons/icon_register.png",
+      needed: "Con credencial",
+      precio: 450
+    },
+  ]
+  $scope.date = new Date();
 }]);
