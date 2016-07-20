@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: RobotoCL;
-    src: url(../fonts/RobotoCondensed-Light.ttf);
+    src: url(../fonts/RobotoCondensed-light.ttf);
 }
 @font-face {
     font-family: RobotoR;
@@ -19,7 +19,7 @@
     src: url(../fonts/Roboto-Light.ttf);
 }
 body{
-  font-family: RobotoCL;
+  font-family: RobotoCR;
   -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
@@ -65,17 +65,20 @@ a{
   margin: 0 auto;
 }
 #Nosotros{
-  background-color: #E62D23;
+  background-color: #dd5238;
   padding: 15px 0 15px 0;
   color: #fff;
   text-align: center;
-  font-family: RobotoR;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-family: RobotoCL;
 }
 #Nosotros p{
-  font-size: 1.3em;
+  font-size: 24px;
   padding: 25px 3px 0px 3px;
   text-align: justify;
 }
+
 #Conferencistas{
   background-color: #ffffff;
   padding: 15px 0 15px 0;
@@ -218,7 +221,7 @@ a{
     line-height: 0;
     border: 6em solid transparent;
     margin-top: -11em;
-    border-bottom: 6em solid #E62D23;
+    border-bottom: 6em solid #dd5238;
     left: -6em;
     top: 0em;
 }
@@ -296,6 +299,7 @@ a{
 .navbar_second_black{
   color: #231f20 !important;
 }
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 @media only screen and (max-width : 767px) {
   .vertical-center {
     min-height: 50%;
@@ -312,6 +316,9 @@ a{
   }
   .conferencista_image_modal{
     width: 30%;
+  }
+  #Nosotros .video{
+    padding: 0px;
   }
   #Nosotros p {
     padding: 15px 3px 0px 3px;

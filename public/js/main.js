@@ -2,10 +2,11 @@ var App = angular.module('App',[]);
 
 App.controller('main-controller', ['$scope', function($scope) {
 
-  var height = $('#top').height();
+  var height = $('#Home').height();
   var windowHeight = $(window).height();
+
   $( window ).resize(function() {
-    height = $('#top').height();
+    height = $('#Home').height();
     windowHeight = $(window).height();
   });
 
@@ -32,7 +33,7 @@ App.controller('main-controller', ['$scope', function($scope) {
 
     $('a.scroll').on('click', function (e) { //Scroll down a informacion
       $('html, body').animate({
-          scrollTop: $($(this).attr('href')).offset().top - 250
+          scrollTop: $($(this).attr('href')).offset().top - 260
       }, 1000);
       e.preventDefault();
     });
@@ -164,11 +165,6 @@ App.controller('main-controller', ['$scope', function($scope) {
       id: "ubicacionFecha"
     },
     {
-      icon_url: "img/icons/icon_travel_registration.png",
-      nombre:"REGISTRO",
-      id: "registro"
-    },
-    {
       icon_url: "img/icons/icon_travel_agenda.png",
       nombre:"AGENDA",
       id: "agenda"
@@ -177,6 +173,11 @@ App.controller('main-controller', ['$scope', function($scope) {
       icon_url: "img/icons/icon_travel_pricing.png",
       nombre:"PRECIOS",
       id: "precios"
+    },
+    {
+      icon_url: "img/icons/icon_travel_registration.png",
+      nombre:"REGISTRO",
+      id: "registro"
     },
   ]
   $scope.informacionPrecios = [
