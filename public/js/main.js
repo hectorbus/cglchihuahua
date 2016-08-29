@@ -2,30 +2,125 @@ var App = angular.module('App',[]);
 
 App.controller('main-controller', ['$scope', function($scope) {
 
+  $scope.date = new Date();
+
   var height = $('#Home').height();
   var windowHeight = $(window).height();
 
-  $( window ).resize(function() {
-    height = $('#Home').height();
-    windowHeight = $(window).height();
-  });
+  // $( window ).resize(function() {
+  //   height = $('#Home').height();
+  //   windowHeight = $(window).height();
+  // });
 
   $(window).scroll(function scrollTop(){
-   if ($(this).scrollTop() > height-55) {
-     $('#mainNav').fadeIn();
-   } else {
-     $('#mainNav').fadeOut();
-   }
- });
-
-  $("a").click(function(event) {
-    event.preventDefault();
-    $('html,body').animate( {
-      scrollTop: $(this.hash).offset().top - 49
-    } , 1000);
+    if ($(this).scrollTop() > height-55) {
+      $('#mainNav').fadeIn();
+    } else {
+      $('#mainNav').fadeOut();
+    }
   });
 
-  jQuery(document).ready(function ($) {
+   $("a").click(function(event) {
+     event.preventDefault();
+     $('html,body').animate( {
+       scrollTop: $(this.hash).offset().top - 49
+     } , 1000);
+   });
+
+  $(document).ready(function(){
+    $(document).click(function(){
+      if ($('html').hasClass("remodal-is-locked")) {
+        var video = $(".video iframe").attr("src");
+        $(".video iframe").attr("src","");
+        $(".video iframe").attr("src",video);
+      }
+    });
+  });
+
+  $(document).ready(function(){
+    var bar1 = new ProgressBar.Line("#progress_trabajo-en-equipo", {
+      easing: 'easeInOut',
+      duration: 1500,
+      color: '#231f20',
+      trailColor: '#57585a',
+      svgStyle: {width: '100%', height: '100%'},
+      text: {
+        style: {
+          transform: null
+        },
+        autoStyleContainer: false
+      },
+      from: {color: '#FFEA82'},
+      to: {color: '#ED6A5A'},
+      step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+      }
+    });
+
+    var bar2 = new ProgressBar.Line("#progress_beneficiencia", {
+      easing: 'easeInOut',
+      duration: 1500,
+      color: '#231f20',
+      trailColor: '#57585a',
+      svgStyle: {width: '100%', height: '100%'},
+      text: {
+        style: {
+          transform: null
+        },
+        autoStyleContainer: false
+      },
+      from: {color: '#FFEA82'},
+      to: {color: '#ED6A5A'},
+      step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+      }
+    });
+
+    var bar3 = new ProgressBar.Line("#progress_importancia", {
+      easing: 'easeInOut',
+      duration: 1500,
+      color: '#231f20',
+      trailColor: '#57585a',
+      svgStyle: {width: '100%', height: '100%'},
+      text: {
+        style: {
+          transform: null
+        },
+        autoStyleContainer: false
+      },
+      from: {color: '#FFEA82'},
+      to: {color: '#ED6A5A'},
+      step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+      }
+    });
+
+    var bar4 = new ProgressBar.Line("#progress_mejores-lideres", {
+      easing: 'easeInOut',
+      duration: 1500,
+      color: '#231f20',
+      trailColor: '#57585a',
+      svgStyle: {width: '100%', height: '100%'},
+      text: {
+        style: {
+          transform: null
+        },
+        autoStyleContainer: false
+      },
+      from: {color: '#FFEA82'},
+      to: {color: '#ED6A5A'},
+      step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+      }
+    });
+
+    bar1.animate(0.83);
+    bar2.animate(0.61);
+    bar3.animate(0.87);
+    bar4.animate(0.81);
+  });
+
+  $(document).ready(function ($) {
     $('.nav a').click(function (e) {
       e.preventDefault()
       $(this).tab('show')
@@ -68,7 +163,7 @@ App.controller('main-controller', ['$scope', function($scope) {
             },
             {
                 no: 4,
-                nombre: "OBISPO T.D. JAKES",
+                nombre: "T.D. JAKES",
                 quienEs: "Fundador y Pastor Principal, The Potter’s House",
                 descripcion: "T. D. Jakes es un visionario, pensador provocativo y emprendedor que sirve como pastor principal de The Potter’s House, una organización global humanitaria y congregación de 30,000 miembros. Fue nombrado el “mejor predicador de Estados Unidos” por la revista TIME y su alcance y presencia incluye cine, televisión, radio y libros incluyendo el best seller del New York Times Destino y la película Milagros del Cielo con la actriz Jennifer Garner.",
                 img: "img/profiles/tdJakes.png",
@@ -86,7 +181,7 @@ App.controller('main-controller', ['$scope', function($scope) {
             },
             {
                 no: 6,
-                nombre: "DR. TRAVIS BRADBERRY",
+                nombre: "TRAVIS BRADBERRY",
                 quienEs: "Autor de libros de mayor venta, Co-Fundador de TalentSmart",
                 descripcion: "El Dr. Travis Bradberry es el coautor galardonado del libro #1 en ventas Inteligencia Emocional 2.0 y cofundador de TalentSmart, una empresa consultora que sirve a más del 75% de las empresas Fortune 500. Bradberry es un experto de renombre mundial en el área de la inteligencia emocional y conferencista que ayuda a empresas y personas a entender lo que es la inteligencia emocional, y sobre todo, cómo usarla para mejorar su liderazgo.",
                 img: "img/profiles/travisBradberry.png",
@@ -187,19 +282,18 @@ App.controller('main-controller', ['$scope', function($scope) {
       needed: "1 Persona",
       precio: 550
     },
-    {
-      nombre: "GRUPOS",
-      icon_url:"img/icons/icon_register_group.png",
-      needed: "+ 10 Personas",
-      precio: 500,
-      ex: "c/u"
-    },
-    {
-      nombre: "ESTUDIANTES",
-      icon_url:"img/icons/icon_register.png",
-      needed: "Con credencial",
-      precio: 450
-    },
+    // {
+    //   nombre: "GRUPOS",
+    //   icon_url:"img/icons/icon_register_group.png",
+    //   needed: "+ 10 Personas",
+    //   precio: 500,
+    //   ex: "c/u"
+    // },
+    // {
+    //   nombre: "ESTUDIANTES",
+    //   icon_url:"img/icons/icon_register.png",
+    //   needed: "Con credencial",
+    //   precio: 450
+    // },
   ]
-  $scope.date = new Date();
 }]);

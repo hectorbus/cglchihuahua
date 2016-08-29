@@ -41,13 +41,17 @@
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 10px;
-  padding: 0px 10px 25px 10px;
+  padding: 0px ;
   border-top: 25px solid black;
 
   transform: translate3d(0, 0, 0);
 
   color: #2b2e38;
   background: #fff;
+}
+
+.remodal_conf{
+  padding: 0px 10px 25px 10px;
 }
 
 .remodal h1{

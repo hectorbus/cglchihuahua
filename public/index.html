@@ -15,7 +15,6 @@
       <link href="css/remodal.css" rel="stylesheet">
       <link href="css/remodal-default-theme.css" rel="stylesheet">
       <link href="css/hover.css" rel="stylesheet">
-      <link href="css/progressjs.css" rel="stylesheet">
       <link href="css/main.css" rel="stylesheet">
   </head>
   <style media="screen">
@@ -53,56 +52,61 @@
       </nav>
       <div id="Home" class="container">
           <div class="row">
-              <div class="col-xs-12 vertical-center mainArtContainer">
-                  <img src="img/thumbs/cumbre-thumb6.png" alt="TGLS2016 Main Art" class="mainArt"/>
+              <div class="col-xs-12 mainArtContainer">
+                  <img src="img/thumbs/cumbre-thumb6.jpg" alt="TGLS2016 Main Art" class="mainArt"/>
+              </div>
+              <a data-remodal-target="modalVideo" class="video_button hvr-grow">
+                VER VIDEO
+              </a>
+              <div class="remodal remodal_video" data-remodal-id="modalVideo" style="border-color: #000000">
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <div class='embed-container video'><iframe src='https://www.youtube.com/embed/edgUQcPYUaU' frameborder='0' allowfullscreen></iframe></div>
+              </div>
+              <hr>
+                <h3>9 CONFERENCIAS DE ALTO IMPACTO</h3>
+                <div class="speakers">
+                  BILL HYBELS <span>|</span> TRAVIS BRADBERRY <span>|</span> JOSSY CHACKO <span>|</span> CHRIS MCCHESNEY <span>|</span> T.D. JAKES <span>|</span> JOHN C. MAXWELL <span>|</span> DANIELLE STRICKLAND <span>|</span> MELINDA GATES <span>|</span> WILFREDO DE JESÚS
+                </div>
               </div>
           </div>
       </div>
-      <div class="construccion" style="position: fixed; bottom: 100px; width: 100%; text-align: center;">
-        <h1>
-          <img src="img/progress.gif" alt=""style="width: 50px;" />
-          PAGINA EN CONSTRUCCION
-          <img src="img/progress.gif" alt=""style="width: 50px;" />
-        </h1>
-      </div>
-
-      <!-- <div id="Nosotros">
-        <div class="col-lg-6 text-center">
+      <div id="Nosotros" class="targetElement">
+        <div class="col-lg-12 text-center">
           <i class="arrow"><i></i></i>
         </div>
         <div class="container">
           <div class="col-md-12 col-lg-7">
-            <h3 style="margin-bottom: 0;">NOSOTROS:</h3>
-            <p>
+            <h3 class="Nosotros_title"><b>NOSOTROS</b></h3>
+            <p class="Nosotros_text">
               La Cumbre Global de Liderazgo es un recurso que reúne a una diversidad de oradores de primer nivel, por videoconferencia en una gran pantalla. Cuyo enfoque en absoluto son temas para fortalecer habilidades de liderazgo. La Cumbre Global de Liderazgo se caracteriza por mantener un contenido intelectualmente riguroso que apelara tu forma de pensar, por lo que se vuelve altamente desafiante e intensa. La intervención de facilitadores en vivo te ayudará a aterrizar los conceptos aprendidos. Todo con el fin de estirar a los líderes más allá de su zona de confort.
             </p>
-            <h3>RAZONES PARA ASISTIR:</h3>
-            <p>
+            <h3 class="Nosotros_title" ><b>RAZONES PARA ASISTIR</b></h3>
+            <p class="Nosotros_text">
               Se le presenta una gran cantidad de oportunidades para mejorar sus habilidades y desarrollar las personas que lideras. La Cumbre es una herramienta probada que produce resultados convincentes para los líderes que asisten.
             </p>
           </div>
-          <div class="col-md-12 col-lg-5">
-            <div class="">
-              <h3>TRABAJO EN EQUIPO</h3>
-              <p>
+          <div class="col-md-12 col-lg-5 progressStuff">
+            <div>
+              <h3 class="Nosotros_title_progreso"><b>TRABAJO EN EQUIPO</b></h3>
+              <p id="progress_trabajo-en-equipo">
                 Los asistentes sienten su trabajo en equipo mejorado, una mayor satisfacción en el trabajo y la productividad.
               </p>
             </div>
-            <div class="">
-              <h3>EFICIENCIA</h3>
-              <p>
+            <div>
+              <h3 class="Nosotros_title_progreso"><b>BEFICIENCIA</b></h3>
+              <p id="progress_beneficiencia">
                 Los asistentes dicen que su organización es más eficaz debido a la visión más clara.
               </p>
             </div>
-            <div class="">
-              <h3>IMPORTANCIA</h3>
-              <p>
+            <div>
+              <h3 class="Nosotros_title_progreso"><b>IMPORTANCIA</b></h3>
+              <p id="progress_importancia">
                 Los asistentes se sienten un mayor sentido de importancia y satisfacción.
               </p>
             </div>
-            <div class="">
-              <h3>MEJORES LIDERES</h3>
-              <p>
+            <div>
+              <h3 class="Nosotros_title_progreso"><b>MEJORES LIDERES</b></h3>
+              <p id="progress_mejores-lideres">
                 Los asistentes citan formas concretas en las que su supervisor se ha convertido en un mejor líder.
               </p>
             </div>
@@ -125,7 +129,7 @@
             </a>
           </div>
         </div>
-        <div class="remodal" data-remodal-id="modal{{modal.no}}" ng-repeat="modal in conferencistas" style="border-color: {{modal.color}};">
+        <div class="remodal remodal_conf" data-remodal-id="modal{{modal.no}}" ng-repeat="modal in conferencistas" style="border-color: {{modal.color}};">
           <button data-remodal-action="close" class="remodal-close"></button>
           <h1 style="color: {{modal.color}};">{{modal.nombre}}</h1>
           <h4>{{modal.quienEs}}</h4>
@@ -209,52 +213,102 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="agenda-date" class="active" rowspan="1">
+                                    <td class="agenda-date" class="active" rowspan="3">
                                         <div class="dayofmonth">27</div>
                                         <div class="dayofweek">Viernes</div>
                                         <div class="shortdate text-muted">Enero, 2017</div>
                                     </td>
                                     <td class="agenda-time">
-                                        6:00 PM
+                                        12:00 PM
                                     </td>
                                     <td class="agenda-events">
                                         <div class="agenda-event">
-                                            Algun Evento
+                                            Conferencia
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="agenda-date" class="active" rowspan="3">
+                                    <td class="agenda-time">
+                                        12:00 PM
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            Conferencia
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="agenda-time">
+                                        12:00 PM
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            Conferencia
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="agenda-date" class="active" rowspan="6">
                                         <div class="dayofmonth">28</div>
                                         <div class="dayofweek">Sabado</div>
                                         <div class="shortdate text-muted">Enero, 2017</div>
                                     </td>
                                     <td class="agenda-time">
-                                        8:00 - 9:00 AM
+                                        12:00 PM
                                     </td>
                                     <td class="agenda-events">
                                         <div class="agenda-event">
-                                            Algun Evento
+                                            Conferencia
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="agenda-time">
-                                        10:15 AM - 12:00 PM
+                                        12:00 PM
                                     </td>
                                     <td class="agenda-events">
                                         <div class="agenda-event">
-                                            Algun Evento
+                                            Conferencia
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="agenda-time">
-                                        7:00 - 9:00 PM
+                                        12:00 PM
                                     </td>
                                     <td class="agenda-events">
                                         <div class="agenda-event">
-                                            Algun Evento
+                                            Conferencia
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="agenda-time">
+                                        12:00 PM
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            Conferencia
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="agenda-time">
+                                        12:00 PM
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            Conferencia
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="agenda-time">
+                                        12:00 PM
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            Conferencia
                                         </div>
                                     </td>
                                 </tr>
@@ -270,7 +324,7 @@
                   <div class="preciosI">
                     <img ng-src="{{precio.icon_url}}" alt="{{precio.nombre}}" />
                     <h3>{{precio.nombre}}<br><span>{{precio.needed}}</span></h3>
-                    <h4>{{precio.precio | currency:"MXN$"}} <span>{{precio.ex}}</span></h4>
+                    <h4>{{precio.precio | currency:"MXN $"}} <span>{{precio.ex}}</span></h4>
                   </div>
                 </div >
                 <h6 class="col-xs-12" style="text-align: left;">
@@ -302,17 +356,17 @@
       <footer class="footer">
         <div class="container">
           <div class="col-lg-12">
-            <h5>&copy {{date | date:'yyyy'}} Cumbre Global de Liderazgo | Chihuahua All Rights Reserved.</h5>
+            <h5>&copy {{date | date:'yyyy'}} Cumbre Global de Liderazgo, Chihuahua | All Rights Reserved.</h5>
           </div>
         </div>
-      </footer> -->
+      </footer>
 
       <script src="js/angular.min.js"></script>
       <script src="js/jquery.js"></script>
       <script src="js/jquery-ui.js"></script>
       <script src="js/remodal.js"></script>
+      <script src="js/progressbar.js"></script>
       <script src="js/bootstrap.min.js"></script>
-      <script src="js/progress.js"></script>
       <script src="js/main.js"></script>
   </body>
 
