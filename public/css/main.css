@@ -84,6 +84,7 @@ a{
   color: #231f20;
   font-family: RobotoCL;
   text-decoration: none;
+  cursor:pointer;
 }
 #Nosotros{
   background-color: #dd5238;
@@ -262,8 +263,17 @@ a{
   color: #fff;
   text-align: center;
 }
-.footer{
+footer{
   text-align: center;
+}
+footer .hash{
+  height: 15px;
+  vertical-align: text-bottom;
+}
+footer .social_button{
+  text-decoration: none;
+  color: #231f20;
+  margin: 5px;
 }
 .arrow {
     position: relative;
@@ -355,6 +365,16 @@ a{
   color: #231f20 !important;
 }
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* MailChimp */
+
+#mc_embed_signup{background:#fff; clear:left; font:19px RobotoCL,sans-serif; width:100%;border-left: 1px solid #57585A;}
+#mc_embed_signup label, footer .social label{font-size: 20px !important; font-weight: 300;}
+#mc_embed_signup form, footer .social{text-align: center; padding: 0; margin: 15px 0 15px 0;padding: 10px 0 10px 0;}
+#mc_embed_signup .button{background-color: #231F20 !important;}
+#mc_embed_signup .button:hover{background-color: #57585a !important;}
+
+
 @media only screen and (max-width : 767px) {
   .mainArt{
     width: 100%;
@@ -375,7 +395,7 @@ a{
     display: none;
   }
   .mainArtContainer{
-    min-height: 500px;
+    margin-bottom: 50px;
   }
   .conferencista{
     width: 50%;

@@ -13,7 +13,7 @@ App.controller('main-controller', ['$scope', function($scope) {
   // });
 
   $(window).scroll(function scrollTop(){
-    if ($(this).scrollTop() > height-55) {
+    if ($(this).scrollTop() > height-5) {
       $('#mainNav').fadeIn();
     } else {
       $('#mainNav').fadeOut();
