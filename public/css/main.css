@@ -259,7 +259,9 @@ a{
 .agenda .agenda-events .agenda-event {  }
 
 #Contacto{
-  background-color: #57585a;
+  background: #57585a url('../img/world-map.png');
+  background-size: cover;
+  background-position: center;
   color: #fff;
   text-align: center;
 }
