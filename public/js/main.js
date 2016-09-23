@@ -4,28 +4,43 @@ App.controller('main-controller', ['$scope', function($scope) {
 
   $scope.date = new Date();
 
-  var height = $('#Home').height();
-  var windowHeight = $(window).height();
 
-  // $( window ).resize(function() {
-  //   height = $('#Home').height();
-  //   windowHeight = $(window).height();
-  // });
+  $(document).ready(function(){
 
-  $(window).scroll(function scrollTop(){
-    if ($(this).scrollTop() > height-5) {
-      $('#mainNav').fadeIn();
-    } else {
-      $('#mainNav').fadeOut();
+    var imgSrc = "img/thumbs/";
+    var height;
+
+    function mainArt(){
+      windowWidht = $('#Home').width();
+      height = $('#Home').height();
+      if (windowWidht > 435) {
+        $(".mainArtContainer img").attr('src', imgSrc + "cumbre-thumb6.jpg");
+      }else {
+        $(".mainArtContainer img").attr('src', imgSrc + "cumbre-thumb-m.png");
+      }
     }
-  });
+    mainArt();
+    $( window ).resize(function() {
+      mainArt();
+    });
 
-   $("nav a").click(function(event) {
+    $(window).scroll(function scrollTop(){ //Nav fade in, fade out
+      if ($(this).scrollTop() > height-5) {
+        $('#mainNav').fadeIn();
+      } else {
+        $('#mainNav').fadeOut();
+      }
+    });
+
+  })
+
+
+  $("nav a").click(function(event) {
      event.preventDefault();
      $('html,body').animate( {
        scrollTop: $(this.hash).offset().top - 49
      } , 1000);
-   });
+  });
 
   $(document).ready(function(){
     $(document).click(function(){
@@ -128,7 +143,7 @@ App.controller('main-controller', ['$scope', function($scope) {
 
     $('a.scroll').on('click', function (e) { //Scroll down a informacion
       $('html, body').animate({
-          scrollTop: $($(this).attr('href')).offset().top - 260
+          scrollTop: $($(this).attr('href')).offset().top - 100
       }, 1000);
       e.preventDefault();
     });
@@ -245,18 +260,12 @@ App.controller('main-controller', ['$scope', function($scope) {
       needed: "1 Persona",
       precio: 550
     },
-    // {
-    //   nombre: "GRUPOS",
-    //   icon_url:"img/icons/icon_register_group.png",
-    //   needed: "+ 10 Personas",
-    //   precio: 500,
-    //   ex: "c/u"
-    // },
-    // {
-    //   nombre: "ESTUDIANTES",
-    //   icon_url:"img/icons/icon_register.png",
-    //   needed: "Con credencial",
-    //   precio: 450
-    // },
+    {
+      nombre: "GRUPOS",
+      icon_url:"img/icons/icon_register_group.png",
+      needed: "Compra 9 Boletos y obten 1 Gratis",
+      precio: 550,
+      ex: "c/u"
+    },
   ]
 }]);

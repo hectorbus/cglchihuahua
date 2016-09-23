@@ -41,6 +41,7 @@ a{
 }
 #mainNav .nav-links{
   font-family: RobotoCR;
+  overflow:hidden;
 }
 #mainNav .navbar-brand{
   color: #ffffff;
@@ -199,7 +200,7 @@ a{
 #Informacion .informacionPrecios{
   text-align: center;
   margin: 10px 0;
-  width: 100%;
+  width: 50%;
 }
 #Informacion .informacionPrecios span{
   font-size: 15px;
@@ -214,6 +215,7 @@ a{
 #ubicacionFecha .ubicacionFechaText{
   font-size: 18px;
   font-family: RobotoCR;
+  margin-top: 30px;
 }
 #ubicacionFecha .ubicacionFechaText p{
   margin: 0;
@@ -226,12 +228,8 @@ a{
 }
 #ubicacionFecha .ubicacionFechaFechas{
   margin-top: 15px;
-  text-align: left;
-  font-size: 15px;
+  text-align: center;
   font-family: RobotoR;
-}
-#ubicacionFecha .comInfo{
-  margin-top: 20px;
 }
 .agenda {  }
 
@@ -257,6 +255,14 @@ a{
 /* Events */
 .agenda .agenda-events {  }
 .agenda .agenda-events .agenda-event {  }
+
+/* REGISTRO */
+
+#registro .registroContainer{
+  background-image: url("../img/paymentBG.png");
+  background-position: center;
+  background-size: cover;
+}
 
 #Contacto{
   background: #57585a url('../img/world-map.png');
@@ -375,7 +381,14 @@ footer .social_button{
 #mc_embed_signup form, footer .social{text-align: center; padding: 0; margin: 15px 0 15px 0;padding: 10px 0 10px 0;}
 #mc_embed_signup .button{background-color: #231F20 !important;}
 #mc_embed_signup .button:hover{background-color: #57585a !important;}
+#mc_embed_signup_scroll #mce-EMAIL{width: 280px}
 
+@media only screen and (max-width : 992px) {
+  #mc_embed_signup{
+    border-left: 0px ;
+    border-top: 1px solid #57585A;
+  }
+}
 
 @media only screen and (max-width : 767px) {
   .mainArt{
@@ -399,6 +412,9 @@ footer .social_button{
   .mainArtContainer{
     margin-bottom: 50px;
   }
+  .mainArt{
+    max-width: 340px;
+  }
   .conferencista{
     width: 50%;
     height: auto;;
@@ -411,10 +427,16 @@ footer .social_button{
   }
 }
 @media (min-width: 768px) {
-.col-sm-15 {
+    .col-sm-15 {
         width: 20%;
         float: left;
     }
+}
+@media (max-width: 768px){
+  #mc_embed_signup .button {
+    width: 280px !important;
+  }
+
 }
 @media (min-width: 992px) {
     .col-md-15 {
