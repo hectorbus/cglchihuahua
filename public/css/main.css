@@ -438,6 +438,12 @@ footer .social_button{
   }
 
 }
+@media (max-width: 675px){
+  #Informacion .informacionPrecios {
+    width: 100%;
+  }
+
+}
 @media (min-width: 992px) {
     .col-md-15 {
         width: 20%;
