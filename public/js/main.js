@@ -34,6 +34,17 @@ App.controller('main-controller', ['$scope', function($scope) {
 
   })
 
+  $(document).ready(function(){
+
+    $('.paymentToggleC').hide();
+
+    $('.paymentToggle').click(function(){
+      $(this).text(function(i, v){
+               return v === 'Realizar pago con targeta de credito' ? 'Realizar pago con deposito en efectivo' : 'Realizar pago con targeta de credito'
+      });
+      $('.paymentToggleE, .paymentToggleC').fadeToggle();
+    })
+  })
 
   $("nav a").click(function(event) {
      event.preventDefault();
