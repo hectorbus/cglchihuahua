@@ -20,6 +20,7 @@ App.controller('main-controller', ['$scope', function($scope) {
       }
     }
     mainArt();
+
     $( window ).resize(function() {
       mainArt();
     });
@@ -34,17 +35,17 @@ App.controller('main-controller', ['$scope', function($scope) {
 
   })
 
-  $(document).ready(function(){
-
-    $('.paymentToggleC').hide();
-
-    $('.paymentToggle').click(function(){
-      $(this).text(function(i, v){
-               return v === 'Realizar pago con tarjeta de credito' ? 'Realizar pago con deposito en efectivo' : 'Realizar pago con tarjeta de credito'
-      });
-      $('.paymentToggleE, .paymentToggleC').fadeToggle();
-    })
-  })
+  // $(document).ready(function(){
+  //
+  //   $('.paymentToggleC').hide();
+  //
+  //   $('.paymentToggle').click(function(){
+  //     $(this).text(function(i, v){
+  //              return v === 'Realizar pago con tarjeta de credito' ? 'Realizar pago con deposito en efectivo' : 'Realizar pago con tarjeta de credito'
+  //     });
+  //     $('.paymentToggleE, .paymentToggleC').fadeToggle();
+  //   })
+  // })
 
   $("nav a").click(function(event) {
      event.preventDefault();
@@ -282,7 +283,7 @@ App.controller('main-controller', ['$scope', function($scope) {
     {
       nombre: "GRUPOS",
       icon_url:"img/icons/icon_register_group.png",
-      needed: "Compra 9 Boletos y obten 1 Gratis",
+      needed: "Compra 10 Boletos y obten 1 Gratis",
       precio: 550,
       ex: "c/u"
     },
