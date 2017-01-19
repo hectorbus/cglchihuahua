@@ -170,17 +170,17 @@ App.controller('main-controller', ['$scope', function($scope) {
                 color: "#1489d0",
                 class: "col-lg-15"
             },
+//             {
+//                 no: 2,
+//                 nombre: "OBISPO T.D. JAKES",
+//                 quienEs: "Fundador y Pastor Principal, The Potter’s House",
+//                 descripcion: "T. D. Jakes es un visionario, pensador provocativo y emprendedor que sirve como pastor principal de The Potter’s House, una organización global humanitaria y congregación de 30,000 miembros. Fue nombrado el “mejor predicador de Estados Unidos” por la revista TIME y su alcance y presencia incluye cine, televisión, radio y libros incluyendo el best seller del New York Times Destino y la película Milagros del Cielo con la actriz Jennifer Garner.",
+//                 img: "img/profiles/tdJakes.png",
+//                 color: "#11b29a",
+//                 class: "col-lg-15"
+//             },
             {
                 no: 2,
-                nombre: "OBISPO T.D. JAKES",
-                quienEs: "Fundador y Pastor Principal, The Potter’s House",
-                descripcion: "T. D. Jakes es un visionario, pensador provocativo y emprendedor que sirve como pastor principal de The Potter’s House, una organización global humanitaria y congregación de 30,000 miembros. Fue nombrado el “mejor predicador de Estados Unidos” por la revista TIME y su alcance y presencia incluye cine, televisión, radio y libros incluyendo el best seller del New York Times Destino y la película Milagros del Cielo con la actriz Jennifer Garner.",
-                img: "img/profiles/tdJakes.png",
-                color: "#11b29a",
-                class: "col-lg-15"
-            },
-            {
-                no: 3,
                 nombre: "DR. TRAVIS BRADBERRY",
                 quienEs: "Autor de libros de mayor venta, Co-Fundador de TalentSmart",
                 descripcion: "El Dr. Travis Bradberry es el coautor galardonado del libro #1 en ventas Inteligencia Emocional 2.0 y cofundador de TalentSmart, una empresa consultora que sirve a más del 75% de las empresas Fortune 500. Bradberry es un experto de renombre mundial en el área de la inteligencia emocional y conferencista que ayuda a empresas y personas a entender lo que es la inteligencia emocional, y sobre todo, cómo usarla para mejorar su liderazgo.",
@@ -189,7 +189,7 @@ App.controller('main-controller', ['$scope', function($scope) {
                 class: "col-lg-3"
             },
             {
-                no: 4,
+                no: 3,
                 nombre: "WILFREDO DE JESÚS",
                 quienEs: "Pastor Principal, New Life Covenant Church, Líder Comunitario y Autor",
                 descripcion: "Bajo el liderazgo de Wilfredo de Jesús, New Life ha crecido desde 120 personas a más de 17,000 a través de plantar Iglesias y más de 130 ministerios que alcanzan a los más relegados; los pobres, indigentes, prostitutas, drogadictos y pandilleros. Fue nombrado por la revista TIME como una de las personas más influyentes del 2013. De Jesús es el autor del libro En la Brecha, y uno de los oradores favoritos de la Cumbre después de su conferencia desafiante e inspiradora en el 2014.",
@@ -198,7 +198,7 @@ App.controller('main-controller', ['$scope', function($scope) {
                 class: "col-lg-3"
             },
             {
-                no: 5,
+                no: 4,
                 nombre: "CHRIS MCCHESNEY",
                 quienEs: "Autor de libros de mayor venta, Ejecutivo en Franklin Covey",
                 descripcion: "Chris McChesney es un autor exitoso del libro Las 4 Disciplinas de la Ejecución que estuvo en la lista de ventas #1 del Wall Street Journal. McChesney es el Líder Global de la Práctica de Ejecución en Franklin Covey y es conocido por sus conferencias dinámicas y cautivantes. Ha sido consultor con muchas de las mejores marcas del mundo y aprovecha su experiencia práctica para llevar a los líderes desde las salas de juntas a las líneas del frente de las organizaciones a mejorar la ejecución de las ideas más importantes.",
@@ -207,7 +207,7 @@ App.controller('main-controller', ['$scope', function($scope) {
                 class: "col-lg-3"
             },
             {
-                no: 6,
+                no: 5,
                 nombre: "DANIELLE STRICKLAND",
                 quienEs: "Oficial en el Ejército de Salvación, Defensora y Autora",
                 descripcion: "Originaria de Canadá, Danielle Strickland actualmente sirve en la ciudad de Los Ángeles como la Secretaria de Justicia Social para el Territorio Oeste del Ejercito de Salvación. Ha servido a los marginados por más de veinte años y también es embajadora para Stop The Traffik, un esfuerzo global contra la trata de personas. Es autora de varios libros incluyendo A Beautiful Mess. Strickland es una comunicadora excepcional que inspira a los oyentes a hacer a un lado sus expectativas limitadas y alinearse con la versión de Dios para sus vidas.",
@@ -216,7 +216,7 @@ App.controller('main-controller', ['$scope', function($scope) {
                 class: "col-lg-3"
             },
             {
-                no: 7,
+                no: 6,
                 nombre: "JOSSY CHACKO",
                 quienEs: "Fundador y Presidente, Empart Inc.",
                 descripcion: "Jossy Chacko lidera un ministerio global para despertar una transformación integral en las comunidades entre los pueblos no alcanzados y necesitados de Asia. Tienen la meta de ver 100,000 comunidades transformadas para el 2030 a través de plantar iglesias y van por buen camino para lograrlo, plantando un promedio de 11 iglesias por día durante el 2015. Está dirigiendo a un equipo de más de 6,500 personas en siete países. Jossy usa sus dones como comunicador para desafiar a los líderes empresariales y espirituales para que capten una visión más grande de parte de Dios.",
@@ -225,7 +225,7 @@ App.controller('main-controller', ['$scope', function($scope) {
                 class: "col-lg-3"
             },
             {
-                no: 8,
+                no: 7,
                 nombre: "JOHN C. MAXWELL",
                 quienEs: "Experto en Liderazgo, Autor de libros de mayor venta y Coach",
                 descripcion: "John C. Maxwell es autor exitoso de la lista #1 del New York Times, coach y conferencista. Fue identificado como el líder empresarial #1 por American Management Association y el experto de liderazgo más influyente del mundo por la revista Inc. en el 2014. Sus organizaciones – The John Maxwell Company, The John Maxwell Team y Equip – han capacitado a más de 6 millones de líderes en las naciones. Su libro más reciente se titula Vivir Intencionalmente: Escoja una Vida Relevante.",
