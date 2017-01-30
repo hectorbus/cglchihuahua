@@ -12,12 +12,14 @@ App.controller('main-controller', ['$scope', function($scope) {
 
     function mainArt(){
       windowWidht = $('#Home').width();
-      height = $('#Home').height();
+      height = $(window).height();
       if (windowWidht > 435) {
         $(".mainArtContainer img").attr('src', imgSrc + "cumbre-thumb6.jpg");
       }else {
         $(".mainArtContainer img").attr('src', imgSrc + "cumbre-thumb-m.png");
       }
+
+      $('#Home').height(height - 100);
     }
     mainArt();
 

@@ -38,12 +38,6 @@
                           <a class="page-scroll" href="#Nosotros">Nosotros</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#Conferencistas">Conferencistas</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#Informacion">Informacion</a>
-                      </li>
-                      <li>
                           <a class="page-scroll" href="#Contacto">Contacto</a>
                       </li>
                   </ul>
@@ -51,23 +45,20 @@
           </div>
       </nav>
       <div id="Home" class="container">
-          <div class="row">
+          <!-- <div class="row">
               <div class="col-xs-12 mainArtContainer">
-                  <img src="img/thumbs/cumbre-thumb6.jpg" alt="TGLS2016 Main Art" class="mainArt"/>
+                  <img src="img/thumbs/web.png" alt="TGLS2016 Main Art" class="mainArt"/>
               </div>
-              <a data-remodal-target="modalVideo" class="video_button hvr-grow">
-                VER VIDEO
-              </a>
               <div class="remodal remodal_video" data-remodal-id="modalVideo" style="border-color: #000000">
                 <button data-remodal-action="close" class="remodal-close"></button>
                 <div class='embed-container video'><iframe src='https://www.youtube.com/embed/edgUQcPYUaU' frameborder='0' allowfullscreen></iframe></div>
               </div>
               <hr>
-              <h3>8 CONFERENCIAS DE ALTO IMPACTO</h3>
-              <div class="speakers">
-                BILL HYBELS <span>|</span> OBISPO T.D. JAKES <span>|</span> DR. TRAVIS BRADBERRY <span>|</span> WILFREDO DE JESÚS <span>|</span> CHRIS MCCHESNEY <span>|</span> DANIELLE STRICKLAND <span>|</span> JOSSY CHACKO <span>|</span> JOHN C. MAXWELL
-              </div>
-          </div>
+              <h3 style="font-size: 30px;">NOS VEMOS EN 2018!!!</h3>
+              <h3>
+                2 y 3 de Febrero!
+              </h3>
+          </div> -->
       </div>
       <div id="Nosotros" class="targetElement">
         <div class="col-lg-12 text-center">
@@ -110,269 +101,6 @@
               </p>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div id="Conferencistas" class="remodal-bg">
-        <div class="container">
-          <div class="col-lg-12">
-            <h2 class="subTitle">CONFERENCISTAS</h2>
-          </div>
-          <div class="col-lg-12">
-            <a data-remodal-target="modal{{conferencista.no}}" ng-repeat="conferencista in conferencistas">
-              <div class="conferencista" style="background-color: {{conferencista.color}};">
-                <img ng-src="{{conferencista.img}}" alt="{{conferencista.nombre}}"  class="conferencista_image"/>
-                <i class="conf-triangle"><i style="border-bottom-color: {{conferencista.color}};"></i></i>
-                <h4 class="conferencista_name">{{conferencista.nombre}}</h4>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="remodal remodal_conf" data-remodal-id="modal{{modal.no}}" ng-repeat="modal in conferencistas" style="border-color: {{modal.color}};">
-          <button data-remodal-action="close" class="remodal-close"></button>
-          <h1 style="color: {{modal.color}};">{{modal.nombre}}</h1>
-          <h4>{{modal.quienEs}}</h4>
-          <div class="col-sm-4 col-xs-12">
-            <img ng-src="{{modal.img}}" alt="{{modal.nombre}}" class="conferencista_image_modal"/>
-          </div>
-          <div class="col-sm-8 col-xs-12 conferencista_descripcion_modal">
-            <p>
-              {{modal.descripcion}}
-            </p>
-          </div>
-          <br>
-          <button data-remodal-action="cancel" class="remodal-cancel">Cerrar</button>
-        </div>
-      </div>
-
-      <div id="Informacion">
-        <hr>
-        <div class="container">
-          <div class="col-lg-12">
-            <ul class="nav nav-tabs nav-tabs-titles" role="tablist">
-              <a href="#{{icon.id}}" class="col-sm-3 col-xs-6 scroll" aria-controls="{{icon.id}}" role="tab" data-toggle="tab" ng-repeat="icon in informacionIcons">
-                <li role="presentation" class="active  hvr-grow">
-                    <div class="col-lg-12">
-                      <img class="icons" ng-src="{{icon.icon_url}}" alt="{{icon.id}}" />
-                    </div>
-                    <div class="col-lg-12">
-                      {{icon.nombre}}
-                    </div>
-                </li>
-              </a>
-            </ul>
-            <hr>
-            <div class="tab-content">
-              <div role="tabpanel" class="tab-pane active" id="ubicacionFecha">
-                <h3>UBICACION & FECHAS</h3>
-                <div class="col-sm-7 col-xs-12">
-                  <div class='embed-container'>
-                    <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.7719342696!2d-106.08611168791084!3d28.636596690654216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea44c5be3e84bd%3A0xd7b2caa3d186c81b!2sMuseo+Semilla!5e0!3m2!1sen!2smx!4v1465948453243' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe>
-                  </div>
-                </div>
-                <div class="col-sm-5 col-xs-12 ubicacionFechaText">
-                  <div class="text-left">
-                    <p>Museo Semilla - <span style="font-size: 14px;">Auditorio Leonardo Da Vinci</span></p>
-                  </div>
-                  <div class="ubicacionFechaDireccion">
-                    <p>Privada Progreso 1201, San Pedro, </p>
-                    <p>Zona Centro II, 31000,</p>
-                    <p>Chihuahua, Chih, Mx.</p>
-                  </div>
-                  <br><br>
-                  <div class="text-left">
-                    <p>27 y 28 De Enero de 2017</p>
-                  </div>
-                </div>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="registro">
-                <h3>REGISTRO</h3>
-                <div class="col-lg-12 registroContainer">
-
-                  <!-- Nav tabs -->
-                  <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#tarjetaTab" aria-controls="home" role="tab" data-toggle="tab">Pago con Tarjeta de Credito</a></li>
-                    <li role="presentation"><a href="#efectivoTab" aria-controls="profile" role="tab" data-toggle="tab">Pago con Desposito Bancario</a></li>
-                  </ul>
-
-                  <!-- Tab panes -->
-                  <div class="tab-content text-center">
-                    * REGISTRO EN EL EVENTO *
-                  </div>
-
-                </div>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="agenda">
-                <h3>AGENDA</h3>
-                <div class="col-lg-12">
-                  <div class="agenda">
-                    <div class="table-responsive">
-                        <table class="table table-condensed table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Fecha</th>
-                                    <th>Hora</th>
-                                    <th>Evento</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="agenda-date" class="active" rowspan="3">
-                                        <div class="dayofmonth">27</div>
-                                        <div class="dayofweek">Viernes</div>
-                                        <div class="shortdate text-muted">Enero, 2017</div>
-                                    </td>
-                                    <td class="agenda-time">
-                                        5:00 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Inicio de la Cumbre
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        5:40 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Bill Hybels
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        7:40 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Jossy Chacko
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-date" class="active" rowspan="9">
-                                        <div class="dayofmonth">28</div>
-                                        <div class="dayofweek">Sabado</div>
-                                        <div class="shortdate text-muted">Enero, 2017</div>
-                                    </td>
-                                    <td class="agenda-time">
-                                        8:00 AM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Inicio de la Cumbre
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        8:45 AM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Chris McChesney
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        10:15 AM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            John Maxwell
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        11:05 AM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Travis Bradberry
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        12:30 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Refrigerio
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        1:40 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Hybels, Cloud, Niequist
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        2:50 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Danielle Strickland
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        4:10 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Wilfredo de Jesús
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        5:05 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Despedida
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                  </div>
-                  <h6 class="col-xs-12" style="text-align: left;">
-                    *La Agenda esta sujeta a constantes cambios.
-                  </h6>
-                </div>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="precios">
-                <h3>PRECIOS</h3>
-                <div class="col-xs-6 col-sm-4 informacionPrecios" ng-repeat="precio in informacionPrecios">
-                  <div class="preciosI">
-                    <img ng-src="{{precio.icon_url}}" alt="{{precio.nombre}}" />
-                    <h3>{{precio.nombre}}<br><span>{{precio.needed}}</span></h3>
-                    <h4>{{precio.precio | currency:"MXN $"}} <span>{{precio.ex}}</span></h4>
-                  </div>
-                </div >
-                <h6 class="col-xs-12" style="text-align: left;">
-                  *Todas las entradas incluyen gafete oficial de la Cumbre Global de Liderazgo, Cuaderno oficial de la Cumbre para tomar nota durante las conferencias, con anotaciones de cada conferencista, boligrafo oficial de la Cumbre, refrigerios entre conferencias y comida completa el dia Sabado 28.
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 text-center">
-          <i class="arrow-w"><i></i></i>
         </div>
       </div>
 

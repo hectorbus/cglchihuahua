@@ -60,8 +60,12 @@ a{
   margin-bottom: 15px;
 }
 #Home{
-  margin-bottom: 65px;
+  margin: 0;
   text-align: center;
+  background-image: url(../img/thumbs/web.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 #Home h3{
   color: #dd5238;
