@@ -15,11 +15,11 @@ App.controller('main-controller', ['$scope', function($scope) {
       height = $(window).height();
       if (windowWidht > 435) {
         $(".mainArtContainer img").attr('src', imgSrc + "cumbre-thumb6.jpg");
+        $('#Home').height(height - 100);
       }else {
         $(".mainArtContainer img").attr('src', imgSrc + "cumbre-thumb-m.png");
+        $('#Home').height(height - 350);        
       }
-
-      $('#Home').height(height - 100);
     }
     mainArt();
 
