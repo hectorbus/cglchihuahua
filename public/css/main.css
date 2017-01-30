@@ -65,6 +65,7 @@ a{
   background-image: url(../img/thumbs/web.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
   width: 100%;
 }
 #Home h3{
