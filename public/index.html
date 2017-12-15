@@ -1,159 +1,437 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="App">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cumbre Global de Liderazgo | Chihuahua</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/lite-blue-theme.css" rel="stylesheet">
 
-  <head
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="La Cumbre Global de Liderazgo es un recurso que reúne a una diversidad de oradores de primer nivel, por videoconferencia en una gran pantalla. Cuyo enfoque en absoluto son temas para fortalecer habilidades de liderazgo.">
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
 
-      <title>Cumbre Global de Liderazgo | Chihuahua</title>
+    <!-- Fonts -->
 
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-      <link href="css/remodal.css" rel="stylesheet">
-      <link href="css/remodal-default-theme.css" rel="stylesheet">
-      <link href="css/hover.css" rel="stylesheet">
-      <link href="css/main.css" rel="stylesheet">
-      <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <!-- Open Sans for body font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+	<!-- Montserrat for title -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
+  <body>
 
-  <body ng-controller="main-controller">
-      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
-          <div class="container-fluid navbar-bigger">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand page-scroll" href="#Home"><img src="img/logos/TGLS-Spanish-Logo-white-md.png" alt="logo" /></a>
-              </div>
-              <div class="collapse navbar-collapse nav-links" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
-                      <li>
-                          <a class="page-scroll" href="#Nosotros">Nosotros</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#Contacto">Contacto</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-      <div id="Home" class="container">
-          <!-- <div class="row">
-              <div class="col-xs-12 mainArtContainer">
-                  <img src="img/thumbs/web.png" alt="TGLS2016 Main Art" class="mainArt"/>
-              </div>
-              <div class="remodal remodal_video" data-remodal-id="modalVideo" style="border-color: #000000">
-                <button data-remodal-action="close" class="remodal-close"></button>
-                <div class='embed-container video'><iframe src='https://www.youtube.com/embed/edgUQcPYUaU' frameborder='0' allowfullscreen></iframe></div>
-              </div>
-              <hr>
-              <h3 style="font-size: 30px;">NOS VEMOS EN 2018!!!</h3>
-              <h3>
-                2 y 3 de Febrero!
-              </h3>
-          </div> -->
-      </div>
-      <div id="Nosotros" class="targetElement">
-        <div class="col-lg-12 text-center">
-          <i class="arrow"><i></i></i>
-        </div>
-        <div class="container">
-          <div class="col-md-7">
-            <h3 class="Nosotros_title"><b>NOSOTROS</b></h3>
-            <p class="Nosotros_text">
-              La Cumbre Global de Liderazgo es un recurso que reúne a una diversidad de oradores de primer nivel, por videoconferencia en una gran pantalla. Cuyo enfoque en absoluto son temas para fortalecer habilidades de liderazgo. La Cumbre Global de Liderazgo se caracteriza por mantener un contenido intelectualmente riguroso que apelara tu forma de pensar, por lo que se vuelve altamente desafiante e intensa. La intervención de facilitadores en vivo te ayudará a aterrizar los conceptos aprendidos. Todo con el fin de estirar a los líderes más allá de su zona de confort.
-            </p>
-            <h3 class="Nosotros_title" ><b>RAZONES PARA ASISTIR</b></h3>
-            <p class="Nosotros_text">
-              Se le presenta una gran cantidad de oportunidades para mejorar sus habilidades y desarrollar las personas que lideras. La Cumbre es una herramienta probada que produce resultados convincentes para los líderes que asisten.
-            </p>
-          </div>
-          <div class="col-md-5 progressStuff">
-            <div>
-              <h3 class="Nosotros_title_progreso"><b>TRABAJO EN EQUIPO</b></h3>
-              <p id="progress_trabajo-en-equipo">
-                Los asistentes sienten su trabajo en equipo mejorado, una mayor satisfacción en el trabajo y la productividad.
-              </p>
-            </div>
-            <div>
-              <h3 class="Nosotros_title_progreso"><b>BEFICIENCIA</b></h3>
-              <p id="progress_beneficiencia">
-                Los asistentes dicen que su organización es más eficaz debido a la visión más clara.
-              </p>
-            </div>
-            <div>
-              <h3 class="Nosotros_title_progreso"><b>IMPORTANCIA</b></h3>
-              <p id="progress_importancia">
-                Los asistentes se sienten un mayor sentido de importancia y satisfacción.
-              </p>
-            </div>
-            <div>
-              <h3 class="Nosotros_title_progreso"><b>MEJORES LIDERES</b></h3>
-              <p id="progress_mejores-lideres">
-                Los asistentes citan formas concretas en las que su supervisor se ha convertido en un mejor líder.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+  	<!-- Start Header -->
+	<header id="mu-hero" class="" role="banner">
+		<!-- Start menu  -->
+		<nav class="navbar navbar-fixed-top navbar-default mu-navbar">
+		  	<div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
 
-      <div id="Contacto">
-        <div class="container">
-          <div class="col-md-12">
-            <h2 class="subTitle" style="margin: 30px 0 0 0;">CONTACTO</h2>
-          </div>
-          <div class="col-lg-12">
-             <iframe id="JotFormIFrame-62496488492877" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.co/62496488492877" frameborder="0" style="width:100%; height:539px; border:none;" scrolling="no"> </iframe> <script type="text/javascript"> window.handleIFrameMessage = function(e) { var args = e.data.split(":"); var iframe = false; if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } if(window.location.href && window.location.href.indexOf("?") > -1) { var ifr = false; if (args.length > 2) { ifr = document.getElementById("JotFormIFrame-" + args[2]); } else { ifr = document.getElementById("JotFormIFrame"); } var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } </script>
-          </div>
-        </div>
-        <div class="col-lg-12 text-center">
-          <i class="arrow-w"><i></i></i>
-        </div>
-      </div>
+			      <!-- Logo -->
+			      <a class="navbar-brand" href="/">
+              <img src="assets/images/TGLS-Spanish-Logo-mid.png" alt="logo img">
+            </a>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="col-md-6 social">
-            <label>Siguenos en Redes Sociales</label>
-            <div class="col-lg-12">
-              <a href="https://www.facebook.com/CGLChihuahua"  target="_blank" class="social_button"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-              <a href="https://www.twitter.com/ChihuahuaGls" target="_blank" class="social_button"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-              <label class="hash">#CGLChihuahua</label>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div id="mc_embed_signup">
-            <form action="//cglchihuahua.us13.list-manage.com/subscribe/post?u=1ef88d9e9e7648bc8e5778bb3&amp;id=001f3db2cf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-            	<label for="mce-EMAIL">Suscribete a Nuestro Newsletter</label>
-            	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Correo Electronico" required>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1ef88d9e9e7648bc8e5778bb3_001f3db2cf" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                </div>
-            </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <h5 style="height: 0px;">&copy {{date | date:'yyyy'}} Cumbre Global de Liderazgo, Chihuahua | All Rights Reserved.</h5>
-        </div>
-      </footer>
+			    </div>
 
-      <script src="js/angular.min.js"></script>
-      <script src="js/jquery.js"></script>
-      <script src="js/jquery-ui.js"></script>
-      <script src="js/remodal.js"></script>
-      <script src="js/progressbar.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/main.js"></script>
-      <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-84654513-1', 'auto'); ga('send', 'pageview'); </script>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      	<ul class="nav navbar-nav mu-menu navbar-right">
+			      		<li><a href="#mu-hero">Inicio</a></li>
+				        <li><a href="#mu-about">Acerca</a></li>
+			            <li><a href="#mu-speakers">Oradores</a></li>
+			            <li><a href="#mu-register">Registro</a></li>
+			            <li><a href="#mu-contact">Contacto</a></li>
+			      	</ul>
+			    </div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container-fluid -->
+		</nav>
+		<!-- End menu -->
+
+		<div class="mu-hero-overlay">
+			<div class="container">
+				<div class="mu-hero-area">
+
+					<!-- Start hero featured area -->
+					<div class="mu-hero-featured-area">
+						<!-- Start center Logo -->
+						<div class="mu-logo-area">
+							<!-- text based logo -->
+							<!-- <a class="mu-logo" href="#">Eventoz</a> -->
+							<!-- image based logo -->
+							<a class="mu-logo" href="#"><img src="assets/images/logo-white.png" alt="logo img" style="width: 250px;"></a>
+						</div>
+						<!-- End center Logo -->
+
+						<div class="mu-hero-featured-content">
+
+							<h1 style="font-family:RobotoCB;">LA CUMBRE GLOBAL DE LIDERAZGO</h1>
+							<p class="mu-event-date-line">2 - 3 de Febrero, 2018. Chihuahua, MX</p>
+
+							<div class="mu-event-counter-area">
+								<div id="mu-event-counter">
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- End hero featured area -->
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!-- Start main content -->
+	<main role="main">
+		<!-- Start About -->
+		<section id="mu-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-about-area">
+							<!-- Start Feature Content -->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="mu-about-left">
+										<img class="" src="assets/images/foto1.jpg" alt="Men Speaker">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="mu-about-right">
+										<h2>Acerca de la Cumbre</h2>
+                    <p>La Cumbre Global de Liderazgo es un recurso que reúne a una diversidad de oradores de primer nivel, por videoconferencia en una gran pantalla. Cuyo enfoque en absoluto son temas para fortalecer habilidades de liderazgo. La Cumbre Global de Liderazgo se caracteriza por mantener un contenido intelectualmente riguroso que apelara tu forma de pensar, por lo que se vuelve altamente desafiante e intensa.</p>
+                    <p>La intervención de facilitadores en vivo te ayudará a aterrizar los conceptos aprendidos. Todo con el fin de estirar a los líderes más allá de su zona de confort.</p>
+                    <p>Se le presenta una gran cantidad de oportunidades para mejorar sus habilidades y desarrollar las personas que lideras. La Cumbre es una herramienta probada que produce resultados convincentes para los líderes que asisten.</p>
+									</div>
+								</div>
+							</div>
+							<!-- End Feature Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About -->
+
+		<!-- Start Video -->
+		<section id="mu-video">
+			<div class="mu-video-overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="mu-video-area">
+								<a class="mu-video-play-btn" href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Start Video content -->
+			<div class="mu-video-content">
+				<div class="mu-video-iframe-area">
+					<a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+					<iframe width="854" height="480" src="https://www.youtube.com/embed/NnmVGO-r7wU" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<!-- End Video content -->
+
+		</section>
+		<!-- End Video -->
+
+		<!-- Start Speakers -->
+		<section id="mu-speakers">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-speakers-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title">Nuestros Oradores</h2>
+								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p> -->
+							</div>
+
+							<!-- Start Speakers Content -->
+							<div class="mu-speakers-content">
+
+								<div class="mu-speakers-slider">
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/conferencistas/TGLS2017_Bill_Hybels.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>BILL HYBELS</h3>
+											<p>Fundador y Pastor Principal, Willow Creek Community Church</p>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+                  <!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/conferencistas/TGLS2017_Sheryl_Sandberg.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>SHERYL SANDBERG</h3>
+											<p>Driectora Ejecutiva, Facebook</p>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+                  <!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/conferencistas/TGLS2017_Bryan_Stevenson.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>BRYAN STEVENSON</h3>
+											<p>Fundador y Director Ejecutivo, Equal Justice Initiative</p>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+                  <!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/conferencistas/TGLS2017_Sam_Adeyemi.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>SAM ADEYEMI</h3>
+											<p>Fundador y Pastor Principal, Daystar Christian Centre en Nigeria</p>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+                  <!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/conferencistas/TGLS2017_Laszlo_Bock.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>LASZLO BOCK</h3>
+											<p>Asesor Principal, Google; Autor Exitoso</p>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+                  <!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/conferencistas/TGLS2017_Andy_Stanley.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>ANDY STANLEY</h3>
+											<p>Autor de Liderazgo; Comunicador; Pastor</p>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+                  <!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/conferencistas/TGLS2017_Fredrik.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>FREDERIK HÄRÉN</h3>
+											<p>Autor; Experto en Creatividad Empresarial</p>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+                  <!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/conferencistas/TGLS2017_Gary_Haugen.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>GARY HAUGEN</h3>
+											<p>Fundador y Presidente, International Justice Mission.</p>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+								</div>
+							</div>
+							<!-- End Speakers Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Speakers -->
+
+		<!-- Start Venue -->
+		<section id="mu-venue">
+			<div class="mu-venue-area">
+				<div class="row">
+
+					<div class="col-md-6">
+						<div class="mu-venue-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3440.9682039794047!2d-106.11372718331718!3d28.656279634916313!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa85a991ca43daf3f!2sIglesia+Bautista+Jerusalen!5e0!3m2!1ses-419!2smx!4v1513288075160" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="mu-venue-address">
+							<h2>LUGAR <i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
+							<h3>Iglesia Bautista Jerusalén</h3>
+							<h4>Av. Francisco Villa #6505, Col. Panamericana, Chihuahua, MX</h4>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End Venue -->
+
+		<!-- Start Register  -->
+		<section id="mu-register">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-register-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title">Registro</h2>
+							</div>
+
+							<div class="mu-register-content">
+								<!-- <form class="mu-register-form">
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Your Full Name" id="name" name="name" required="">
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="email" class="form-control" placeholder="Enter Your Email" id="email" name="email" required="">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Your Phone Number" id="telephone" name="telephone" required="">
+											</div>
+										</div>
+										<div class="col-md-6">
+
+										<div class="form-group">
+											<select class="form-control" name="ticket" id="ticket">
+												<option value="0">Basic ($12)</option>
+												<option value="1">Standard ($22)</option>
+												<option value="2">Premium ($45)</option>
+											</select>
+										</div>
+										</div>
+									</div>
+
+									<button type="submit" class="mu-reg-submit-btn">SUBMIT</button>
+
+					            </form> -->
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Register -->
+
+		<!-- Start Contact -->
+		<section id="mu-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-contact-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-heading-title">Contacto</h2>
+							</div>
+
+							<!-- Start Contact Content -->
+							<div class="mu-contact-content">
+								<div class="row">
+
+								<div class="col-md-12" style="padding-left: 29px;" >
+                 <iframe id="JotFormIFrame-62496488492877" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.co/62496488492877" frameborder="0" style="width:100%; height:539px; border:none;" scrolling="no"> </iframe> <script type="text/javascript"> window.handleIFrameMessage = function(e) { var args = e.data.split(":"); var iframe = false; if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } if(window.location.href && window.location.href.indexOf("?") > -1) { var ifr = false; if (args.length > 2) { ifr = document.getElementById("JotFormIFrame-" + args[2]); } else { ifr = document.getElementById("JotFormIFrame"); } var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } </script>
+									</div>
+								</div>
+							</div>
+							<!-- End Contact Content -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact -->
+
+	</main>
+
+	<!-- End main content -->
+
+
+	<!-- Start footer -->
+	<footer id="mu-footer" role="contentinfo">
+			<div class="container">
+				<div class="mu-footer-area">
+					<div class="mu-footer-top">
+						<div class="mu-social-media">
+							<a href="https://www.facebook.com/CGLChihuahua/" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/CGLchihuahua" target="_blank"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.youtube.com/channel/UC2Eoduhgune89lLyQsPG5Lg" target="_blank"><i class="fa fa-youtube"></i></a>
+						</div>
+					</div>
+					<div class="mu-footer-bottom">
+						<p class="mu-copy-right">&copy; 2017 Cumbre Global de Liderazgo, Chihuahua | All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+
+	</footer>
+	<!-- End footer -->
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	<!-- Slick slider -->
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <!-- Event Counter -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+
+
+    <!-- Custom js -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+
+
   </body>
-
 </html>
