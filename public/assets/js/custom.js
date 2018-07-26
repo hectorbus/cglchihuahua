@@ -30,7 +30,7 @@
 
 
 	jQuery(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 150) {
+    if ($(window).scrollTop() > $(window).height() - 150) {
         $('.mu-navbar').addClass('mu-nav-show');
 
 	    } else {
@@ -204,10 +204,13 @@
 	  $('.mu-navbar .in').collapse('hide');
 	});
 
+	/* ----------------------------------------------------------- */
+	/*  8. HEADER RESIZE
+	/* ----------------------------------------------------------- */
 
-
-
-
-
+	$('#mu-hero, .mu-hero-overlay').height($(window).height())
+	$(window).resize(function(){
+		$('#mu-hero, .mu-hero-overlay').height($(window).height())
+	})
 
 })( jQuery );

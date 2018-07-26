@@ -395,7 +395,9 @@ button:focus {
 
 
 #mu-about {
-	background-color: #fff;
+  background-color: #fff;
+  background-image:  url("assets/images/backgroundWhite.jpg");
+  background-size: cover;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -715,6 +717,8 @@ button:focus {
 
 #mu-speakers {
 	background-color: #fff;
+  background-image:  url("assets/images/backgroundWhite.jpg");
+  background-size: cover;
 	display: inline;
 	float: left;
 	width: 100%;
