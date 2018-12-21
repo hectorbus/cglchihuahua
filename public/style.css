@@ -987,7 +987,7 @@ button:focus {
 .mu-register-area {
 	display: inline;
 	float: left;
-	padding: 150px 0;
+	padding: 60px 0;
 	width: 100%;
 }
 
@@ -1344,6 +1344,14 @@ button:focus {
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
+
+.mu-horarios-content {
+  color: white;
+  text-align: center;
+  margin-top: 90px;
+}
+
+
 
 
 
