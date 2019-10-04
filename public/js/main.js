@@ -9,8 +9,8 @@ App.controller('main-controller', ['$scope', function($scope) {
 
     var imgSrc = "img/thumbs/";
     var height;
-
-    function mainArt(){
+    
+    let mainArt = () =>{
       windowWidht = $('#Home').width();
       height = $('#Home').height();
       if (windowWidht > 435) {
@@ -18,7 +18,8 @@ App.controller('main-controller', ['$scope', function($scope) {
       }else {
         $(".mainArtContainer img").attr('src', imgSrc + "cumbre-thumb-m.png");
       }
-    }
+    };
+    
     mainArt();
 
     $( window ).resize(function() {
