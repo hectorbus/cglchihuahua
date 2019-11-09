@@ -1,8 +1,4 @@
-# Cumbre Global de Liderazgo, Chihuahua 2017
-#### Static Page for La Cumbre Global de Liderazgo, Chihuahua 2017 - www.cglchihuahua.com
-
-![alt tag](https://github.com/hectorbus/cglchihuahua/blob/master/public/img/ScreenShotCGL.png)
-
+# Cumbre Global de Liderazgo, Chihuahua 2020 - www.cglchihuahua.com
 
 Clone the project.
 ```
