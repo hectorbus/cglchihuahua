@@ -1,444 +1,463 @@
+
 <!DOCTYPE html>
-<html lang="en" ng-app="App">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <head
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="La Cumbre Global de Liderazgo es un recurso que reúne a una diversidad de oradores de primer nivel, por videoconferencia en una gran pantalla. Cuyo enfoque en absoluto son temas para fortalecer habilidades de liderazgo.">
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>La Cumbre Global de Liderazgo Chihuahua</title>
 
-      <title>Cumbre Global de Liderazgo | Chihuahua</title>
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-      <link href="css/remodal.css" rel="stylesheet">
-      <link href="css/remodal-default-theme.css" rel="stylesheet">
-      <link href="css/hover.css" rel="stylesheet">
-      <link href="css/main.css" rel="stylesheet">
-      <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-  </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84654513-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  <body ng-controller="main-controller">
-      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
-          <div class="container-fluid navbar-bigger">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand page-scroll" href="#Home"><img src="img/logos/TGLS-Spanish-Logo-white-md.png" alt="logo" /></a>
-              </div>
-              <div class="collapse navbar-collapse nav-links" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
-                      <li>
-                          <a class="page-scroll" href="#Nosotros">Nosotros</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#Conferencistas">Conferencistas</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#Informacion">Informacion</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#Contacto">Contacto</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-      <div id="Home" class="container">
-          <div class="row">
-              <div class="col-xs-12 mainArtContainer">
-                  <img src="img/thumbs/cumbre-thumb6.jpg" alt="TGLS2016 Main Art" class="mainArt"/>
-              </div>
-              <a data-remodal-target="modalVideo" class="video_button hvr-grow">
-                VER VIDEO
-              </a>
-              <div class="remodal remodal_video" data-remodal-id="modalVideo" style="border-color: #000000">
-                <button data-remodal-action="close" class="remodal-close"></button>
-                <div class='embed-container video'><iframe src='https://www.youtube.com/embed/edgUQcPYUaU' frameborder='0' allowfullscreen></iframe></div>
-              </div>
-              <hr>
-              <h3>8 CONFERENCIAS DE ALTO IMPACTO</h3>
-              <div class="speakers">
-                BILL HYBELS <span>|</span> OBISPO T.D. JAKES <span>|</span> DR. TRAVIS BRADBERRY <span>|</span> WILFREDO DE JESÚS <span>|</span> CHRIS MCCHESNEY <span>|</span> DANIELLE STRICKLAND <span>|</span> JOSSY CHACKO <span>|</span> JOHN C. MAXWELL
-              </div>
-          </div>
-      </div>
-      <div id="Nosotros" class="targetElement">
-        <div class="col-lg-12 text-center">
-          <i class="arrow"><i></i></i>
-        </div>
+      gtag('config', 'UA-84654513-1');
+    </script>
+
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
         <div class="container">
-          <div class="col-md-7">
-            <h3 class="Nosotros_title"><b>NOSOTROS</b></h3>
-            <p class="Nosotros_text">
-              La Cumbre Global de Liderazgo es un recurso que reúne a una diversidad de oradores de primer nivel, por videoconferencia en una gran pantalla. Cuyo enfoque en absoluto son temas para fortalecer habilidades de liderazgo. La Cumbre Global de Liderazgo se caracteriza por mantener un contenido intelectualmente riguroso que apelara tu forma de pensar, por lo que se vuelve altamente desafiante e intensa. La intervención de facilitadores en vivo te ayudará a aterrizar los conceptos aprendidos. Todo con el fin de estirar a los líderes más allá de su zona de confort.
-            </p>
-            <h3 class="Nosotros_title" ><b>RAZONES PARA ASISTIR</b></h3>
-            <p class="Nosotros_text">
-              Se le presenta una gran cantidad de oportunidades para mejorar sus habilidades y desarrollar las personas que lideras. La Cumbre es una herramienta probada que produce resultados convincentes para los líderes que asisten.
-            </p>
-          </div>
-          <div class="col-md-5 progressStuff">
-            <div>
-              <h3 class="Nosotros_title_progreso"><b>TRABAJO EN EQUIPO</b></h3>
-              <p id="progress_trabajo-en-equipo">
-                Los asistentes sienten su trabajo en equipo mejorado, una mayor satisfacción en el trabajo y la productividad.
-              </p>
-            </div>
-            <div>
-              <h3 class="Nosotros_title_progreso"><b>BEFICIENCIA</b></h3>
-              <p id="progress_beneficiencia">
-                Los asistentes dicen que su organización es más eficaz debido a la visión más clara.
-              </p>
-            </div>
-            <div>
-              <h3 class="Nosotros_title_progreso"><b>IMPORTANCIA</b></h3>
-              <p id="progress_importancia">
-                Los asistentes se sienten un mayor sentido de importancia y satisfacción.
-              </p>
-            </div>
-            <div>
-              <h3 class="Nosotros_title_progreso"><b>MEJORES LIDERES</b></h3>
-              <p id="progress_mejores-lideres">
-                Los asistentes citan formas concretas en las que su supervisor se ha convertido en un mejor líder.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div class="navbar-header">
 
-      <div id="Conferencistas" class="remodal-bg">
-        <div class="container">
-          <div class="col-lg-12">
-            <h2 class="subTitle">CONFERENCISTAS</h2>
-          </div>
-          <div class="col-lg-12">
-            <a data-remodal-target="modal{{conferencista.no}}" ng-repeat="conferencista in conferencistas">
-              <div class="conferencista" style="background-color: {{conferencista.color}};">
-                <img ng-src="{{conferencista.img}}" alt="{{conferencista.nombre}}"  class="conferencista_image"/>
-                <i class="conf-triangle"><i style="border-bottom-color: {{conferencista.color}};"></i></i>
-                <h4 class="conferencista_name">{{conferencista.nombre}}</h4>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="remodal remodal_conf" data-remodal-id="modal{{modal.no}}" ng-repeat="modal in conferencistas" style="border-color: {{modal.color}};">
-          <button data-remodal-action="close" class="remodal-close"></button>
-          <h1 style="color: {{modal.color}};">{{modal.nombre}}</h1>
-          <h4>{{modal.quienEs}}</h4>
-          <div class="col-sm-4 col-xs-12">
-            <img ng-src="{{modal.img}}" alt="{{modal.nombre}}" class="conferencista_image_modal"/>
-          </div>
-          <div class="col-sm-8 col-xs-12 conferencista_descripcion_modal">
-            <p>
-              {{modal.descripcion}}
-            </p>
-          </div>
-          <br>
-          <button data-remodal-action="cancel" class="remodal-cancel">Cerrar</button>
-        </div>
-      </div>
-
-      <div id="Informacion">
-        <hr>
-        <div class="container">
-          <div class="col-lg-12">
-            <ul class="nav nav-tabs nav-tabs-titles" role="tablist">
-              <a href="#{{icon.id}}" class="col-sm-3 col-xs-6 scroll" aria-controls="{{icon.id}}" role="tab" data-toggle="tab" ng-repeat="icon in informacionIcons">
-                <li role="presentation" class="active  hvr-grow">
-                    <div class="col-lg-12">
-                      <img class="icons" ng-src="{{icon.icon_url}}" alt="{{icon.id}}" />
-                    </div>
-                    <div class="col-lg-12">
-                      {{icon.nombre}}
-                    </div>
-                </li>
-              </a>
-            </ul>
-            <hr>
-            <div class="tab-content">
-              <div role="tabpanel" class="tab-pane active" id="ubicacionFecha">
-                <h3>UBICACION & FECHAS</h3>
-                <div class="col-sm-7 col-xs-12">
-                  <div class='embed-container'>
-                    <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.7719342696!2d-106.08611168791084!3d28.636596690654216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea44c5be3e84bd%3A0xd7b2caa3d186c81b!2sMuseo+Semilla!5e0!3m2!1sen!2smx!4v1465948453243' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe>
-                  </div>
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="index.html">
+                        
+                        <!-- logo image  -->
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
                 </div>
-                <div class="col-sm-5 col-xs-12 ubicacionFechaText">
-                  <div class="text-left">
-                    <p>Museo Semilla - <span style="font-size: 14px;">Auditorio Leonardo Da Vinci</span></p>
-                  </div>
-                  <div class="ubicacionFechaDireccion">
-                    <p>Privada Progreso 1201, San Pedro, </p>
-                    <p>Zona Centro II, 31000,</p>
-                    <p>Chihuahua, Chih, Mx.</p>
-                  </div>
-                  <br><br>
-                  <div class="text-left">
-                    <p>27 y 28 De Enero de 2017</p>
-                  </div>
-                </div>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="registro">
-                <h3>REGISTRO</h3>
-                <div class="col-lg-12 registroContainer">
 
-                  <!-- Nav tabs -->
-                  <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#tarjetaTab" aria-controls="home" role="tab" data-toggle="tab">Pago con Tarjeta de Credito</a></li>
-                    <li role="presentation"><a href="#efectivoTab" aria-controls="profile" role="tab" data-toggle="tab">Pago con Desposito Bancario</a></li>
-                  </ul>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-                  <!-- Tab panes -->
-                  <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="tarjetaTab">
-                      <script type="text/javascript" src="https://form.jotform.co/jsform/62574342359865"></script>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="efectivoTab">
-                      <script type="text/javascript" src="https://form.jotform.co/jsform/62916683716870"></script>
-                    </div>
-                  </div>
+            </div><!-- /.navbar-header -->
 
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
 
-                  <!-- <div class="paymentToggle hvr-grow">Realizar pago con tarjeta de credito</div>
-                  <div class="paymentToggleC">
-                    <script type="text/javascript" src="https://form.jotform.co/jsform/62574342359865"></script>
-                  </div>
-                  <div class="paymentToggleE">
-                    <script type="text/javascript" src="https://form.jotform.co/jsform/62916683716870"></script>
-                  </div> -->
-                </div>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="agenda">
-                <h3>AGENDA</h3>
-                <div class="col-lg-12">
-                  <div class="agenda">
-                    <div class="table-responsive">
-                        <table class="table table-condensed table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Fecha</th>
-                                    <th>Hora</th>
-                                    <th>Evento</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="agenda-date" class="active" rowspan="3">
-                                        <div class="dayofmonth">27</div>
-                                        <div class="dayofweek">Viernes</div>
-                                        <div class="shortdate text-muted">Enero, 2017</div>
-                                    </td>
-                                    <td class="agenda-time">
-                                        5:00 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Inicio de la Cumbre
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        5:40 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Bill Hybels
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        7:40 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Jossy Chacko
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-date" class="active" rowspan="9">
-                                        <div class="dayofmonth">28</div>
-                                        <div class="dayofweek">Sabado</div>
-                                        <div class="shortdate text-muted">Enero, 2017</div>
-                                    </td>
-                                    <td class="agenda-time">
-                                        8:00 AM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Inicio de la Cumbre
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        8:45 AM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Chris McChesney
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        10:15 AM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            John Maxwell
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        11:05 AM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Travis Bradberry
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        12:30 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Refrigerio
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        1:40 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Hybels, Cloud, Niequist 
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        2:50 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Danielle Strickland
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        4:10 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Wilfredo de Jesús
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        5:05 PM
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Despedida
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                  </div>
-                  <h6 class="col-xs-12" style="text-align: left;">
-                    *La Agenda esta sujeta a constantes cambios.
-                  </h6>
-                </div>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="precios">
-                <h3>PRECIOS</h3>
-                <div class="col-xs-6 col-sm-4 informacionPrecios" ng-repeat="precio in informacionPrecios">
-                  <div class="preciosI">
-                    <img ng-src="{{precio.icon_url}}" alt="{{precio.nombre}}" />
-                    <h3>{{precio.nombre}}<br><span>{{precio.needed}}</span></h3>
-                    <h4>{{precio.precio | currency:"MXN $"}} <span>{{precio.ex}}</span></h4>
-                  </div>
-                </div >
-                <h6 class="col-xs-12" style="text-align: left;">
-                  *Todas las entradas incluyen gafete oficial de la Cumbre Global de Liderazgo, Cuaderno oficial de la Cumbre para tomar nota durante las conferencias, con anotaciones de cada conferencista, boligrafo oficial de la Cumbre, refrigerios entre conferencias y comida completa el dia Sabado 28.
-                </h6>
-              </div>
+                    <!-- navigation menu -->
+                    <li class="active"><a data-scroll href="#about">Acerca</a></li>
+                    <li><a data-scroll href="#speakers">Oradores</a></li>              
+                    <li><a data-scroll href="#schedule">Programa</a></li>        
+                    <li><a data-scroll href="#contribution">Boletos</a></li>
+                    <li><a data-scroll href="#photos">Galería</a></li>
+                
+                </ul>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-12 text-center">
-          <i class="arrow-w"><i></i></i>
-        </div>
-      </div>
+        </div><!-- /.container -->
+    </nav>
 
-      <div id="Contacto">
-        <div class="container">
-          <div class="col-md-12">
-            <h2 class="subTitle" style="margin: 30px 0 0 0;">CONTACTO</h2>
-          </div>
-          <div class="col-lg-12">
-             <iframe id="JotFormIFrame-62496488492877" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.co/62496488492877" frameborder="0" style="width:100%; height:539px; border:none;" scrolling="no"> </iframe> <script type="text/javascript"> window.handleIFrameMessage = function(e) { var args = e.data.split(":"); var iframe = false; if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } if(window.location.href && window.location.href.indexOf("?") > -1) { var ifr = false; if (args.length > 2) { ifr = document.getElementById("JotFormIFrame-" + args[2]); } else { ifr = document.getElementById("JotFormIFrame"); } var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } </script>
-          </div>
+    <header id="site-header" class="site-header valign-center"> 
+        <div class="intro">
+        
         </div>
-        <div class="col-lg-12 text-center">
-          <i class="arrow-w"><i></i></i>
-        </div>
-      </div>
+    </header>
 
-      <footer class="footer">
+    <section id="about" class="section about">
         <div class="container">
-          <div class="col-md-6 social">
-            <label>Siguenos en Redes Sociales</label>
-            <div class="col-lg-12">
-              <a href="https://www.facebook.com/CGLChihuahua"  target="_blank" class="social_button"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-              <a href="https://www.twitter.com/ChihuahuaGls" target="_blank" class="social_button"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-              <label class="hash">#CGLChihuahua</label>
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">La Cumbre Global de Liderazgo</h3>
+
+                    <p>Sin importar en dónde se encuentra tu influencia—en tu familia, escuela, trabajo o iglesia—estás invitado a unirte a más de 405,000 líderes.<br>
+                    Invierte dos días de entrenamiento con oradores de primer nivel a través de videoconferencias con excelente calidad.</p>
+                    <h4 class="text-center">¡Tú tienes influencia y la capacidad<br>de tener impacto positivo en tu comunidad y mundo!</h4>
+
+                    <figure>
+                        <img alt="" class="img-responsive" src="assets/images/about-us.png">
+                    </figure>
+
+
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+                    <h3 class="section-title multiple-title">¿Por qué asistir?</h3>
+
+                    <p>Te presentamos una gran cantidad de oportunidades para mejorar tus habilidades como líder y a desarrollar a las personas que lideras.<br>
+                    La Cumbre es una herramienta probada que produce resultados convincentes para los líderes que asisten.</p>
+
+                    <ul class="list-arrow-right">
+
+                    <li>TRABAJO EN EQUIPO<br>
+                    Los asistentes sienten su trabajo en equipo mejorado, una mayor satisfacción en el trabajo y la productividad.</li>
+
+                    <li>BEFICIENCIA<br>
+                    Los asistentes dicen que su organización es más eficaz debido a la visión más clara.</li>
+
+                    <li>IMPORTANCIA<br>
+                    Los asistentes se sienten un mayor sentido de importancia y satisfacción.</li>
+
+                    <li>MEJORES LIDERES<br>
+                    los asistentes citan formas concretas en las que su supervisor se ha convertido en un mejor líder.</li>
+
+                    
+                    </ul>
+
+                </div><!-- /.col-sm-6 -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>7 y 8<br>Febrero 2020</h3>
+                
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>Sheraton<br>Chihuahua</h3>
+                
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>$550<br>Entrada general</h3>
+                
+                </div>
+                <div class="col-sm-3">
+                
+                    <i class="ion-speakerphone"></i>
+                    <h3>06<br>Oradores</h3>
+                
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+
+    <section id="speakers" class="section speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h3 class="section-title">Oradores</h3>
+                
+                </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div id="mc_embed_signup">
-            <form action="//cglchihuahua.us13.list-manage.com/subscribe/post?u=1ef88d9e9e7648bc8e5778bb3&amp;id=001f3db2cf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-            	<label for="mce-EMAIL">Suscribete a Nuestro Newsletter</label>
-            	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Correo Electronico" required>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1ef88d9e9e7648bc8e5778bb3_001f3db2cf" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Suscribirse" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-1.png">
+                        </figure>
+
+                        <h4>Craig Groeschel</h4>
+                        <p>Co-Fundador y Pastor Principal, Life.Church</p>
+
+                    </div><!-- /.speaker -->
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-2.png">
+                        </figure>
+
+                        <h4>Bear Grylls</h4>
+                        <p>Explorador; Escritor, Presentador de TV</p>
+
+                    </div><!-- /.speaker -->
+                </div><!-- /.col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-3.png">
+                        </figure>
+
+                        <h4>Danielle Strickland</h4>
+                        <p>Pastora; Autora y Defensora de la Justicia</p>
+
+                    </div><!-- /.speaker -->
+                </div><!-- /.col-md-4 -->
+            </div><!-- /.row -->
+<!-- Cambios -->
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-6.png">
+                        </figure>
+
+                        <h4>Jason Dorsey</h4>
+                        <p>Considerado el orador #1 en Generaciones Z y Millennial; Investigador</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-4.png">
+                        </figure>
+
+                        <h4>Liz Bohannon</h4>
+                        <p>Co-Fundadora y Co-Directora Ejecutiva, Sseko Designs</p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-5.png">
+                        </figure>
+                        <h4>Dr. Krish Kandiah</h4>
+                        <p>Fundador de “Home for Good”; Consultor y Emprendedor Social</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="speaker">
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-7.png">
+                        </figure>
+                        <h4>Jia Jiang</h4>
+                        <p>Autor Exitoso; Bloguero: Emprendedor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="section schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Programa</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="schedule-box">
+                        <h2 class="text-center">7 de febrero</h2>
+                        <p><b>17:00</b>
+                            Registro de asistentes</p>
+                        <p><b>18:10</b>
+                             “Tuerce la curva” Craig Groeschel</p>
+                        <p><b>19:00</b>
+                             Receso</p>
+                        <p><b>19:30</b>
+                             “Combustible para el alma” Bear Grylls</p>
+                        <p><b>20:15</b>
+                             “La valentía del principiante” Liz Bohannon</p>
+                        <p><b>21:00</b>
+                             Salida de la sala</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="schedule-box">
+                        <div class="time">
+                        <h2 class="text-center">8 de febrero</h2>
+                        <p><b>09:05</b>
+                            “Lidereando el cambio transformacional” Daniel Strickland</p>
+                        <p><b>09:35</b>
+                             “Pistas generacionales” Jason Dorsey</p>
+                        <p><b>10:15</b>
+                             Receso</p>
+                        <p><b>11:45</b>
+                             “A prueba del rechazo” Jia Jiang</p>
+                        <p><b>12:35</b>
+                             “Liderazgo VIP” Dr. Krish Kandiah</p>
+                        <p><b>13:10</b>
+                             Receso</p>
+                        <p><b>14:00</b>
+                             "El corazón por encima de la cabeza" Craig Groeschel</p>
+                        <p><b>14:40</b>
+                             Clausura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contribution" class="section bg-image-2 contribution">
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-uppercase mt0 font-400">Obtén tus entradas</h3>
+
+                    <div class="col-md-6">
+                        <p><b>Etnos café</b><br>
+                        Martes a viernes de 16:00 a 21:00 horas<br>
+                        Sábado de 9:00 a 13:00 y 16:00 a 21:00<br><br>
+
+                        <b>Iglesia Bautista Jerusalén</b><br>
+                        Lunes a Viernes de 9:00 a 14:00</p>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <p><b>Transferencias y depósitos</b><br>
+                        BBVA Bancomer<br>
+                        Clabe interbancaria 012150001103803850<br>
+                        <b>A nombre de:</b> Todos al mismo tiempo A.C.<br>
+
+                        <b>* Envía tu comprobante a contacto@cglchihuahua.com con tu nombre completo y teléfono celular </b></p>
+                    </div>
+                        
+
+                    <a class="btn btn-white" href="https://www.eventbrite.es/e/entradas-la-cumbre-global-de-liderazgo-2020-71848263089">Boletos online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- cierre de cambios -->
+
+    <section id="photos" class="section photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Galería</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="grid">
+
+                        <li class="grid-item grid-item-sm-3 left">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-7.png">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-8.png">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2.png">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-3.png">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-2-2.png">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-4.png">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-6 navbar-right">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-1.png">
+                        </li>
+                    
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-5.png">
+                        </li>
+
+                        <li class="grid-item grid-item-sm-3">
+                            <img alt="" class="img-responsive center-block" src="assets/images/photos/photos-6.png">
+                        </li>
+
+                    </ul>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Lugar de evento</h3>
+                    <address>
+                        <p><h4>Sheraton</h4><br>
+                        Barranca del Cobre #3211<br>
+                        Chihuahua, Chih., México<br>
+                        Teléfono: (614) 413 9595<br>
+                        Celular: (614) 252 6644<br>
+                        Email: contacto@cglchihuahua.com</p>
+                    </address>
+                </div>
+                <div class="col-sm-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.150663540794!2d-106.13671451522764!3d28.670038852507982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea428aa935e64d%3A0x817c1e2f959a5365!2sSheraton%20Chihuahua%20Soberano!5e0!3m2!1ses-419!2smx!4v1572380802001!5m2!1ses-419!2smx" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="registration" class="section registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Contacto</h3>
+                </div>
+            </div>
+                
+            <form action="#" id="registration-form">
+                <div class="row">
+                    <div class="col-md-12" id="registration-msg" style="display:none;">
+                        <div class="alert"></div>
+                    </div>
+                    <div>
+                        <div class="form-group center-block">
+                            <input type="text" class="form-control" placeholder="Nombre completo" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-group center-block">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center mt20">
+                    <button type="submit" class="btn btn-black" id="registration-submit-btn">Enviar</button>
                 </div>
             </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="social-block">
+                        <li><a href="https://www.facebook.com/cglchihuahua"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/cglcuu"><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/cglchihuahua"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UChRjCIEhOeHXWfvCkk9SuCw/videos"><i class="ion-social-youtube"></i></a></li>
+                    </ul>
+                    
+                     <p class="site-info">&copy La Cumbre Global de Liderazgo, Chihuahua | Todos los derechos reservados.</p>
+                    
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-lg-12">
-          <h5 style="height: 0px;">&copy {{date | date:'yyyy'}} Cumbre Global de Liderazgo, Chihuahua | All Rights Reserved.</h5>
-        </div>
-      </footer>
 
-      <script src="js/angular.min.js"></script>
-      <script src="js/jquery.js"></script>
-      <script src="js/jquery-ui.js"></script>
-      <script src="js/remodal.js"></script>
-      <script src="js/progressbar.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/main.js"></script>
-      <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-84654513-1', 'auto'); ga('send', 'pageview'); </script>
-  </body>
+    </footer>
 
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
