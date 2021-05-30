@@ -1,4 +1,4 @@
-/* 
+/*
  * 1. Google Font
  */
  @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700);
@@ -9,7 +9,7 @@
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
  }
- 
+
  body {
    color: #4e4e4e;
    font-family: 'Roboto', sans-serif;
@@ -19,14 +19,14 @@
    position: relative;
    -webkit-font-smoothing: antialiased;
  }
- 
+
  a {
    color: #000;
  }
  a:focus {
    outline: none;
  }
- 
+
  h1,
  h2,
  h3,
@@ -35,16 +35,16 @@
  h6 {
    font-weight: 700;
  }
- 
+
  p {
    margin: 0 0 30px;
  }
- 
+
  ul li {
    font-weight: 700;
    margin-bottom: 10px;
  }
- 
+
  .custom-list-icon, .list-arrow-right {
    list-style-type: none;
    padding: 0;
@@ -59,7 +59,7 @@
    color: #4e4e4e;
    font-family: "Ionicons";
  }
- 
+
  .social-block {
    list-style-type: none;
    padding: 0;
@@ -79,7 +79,7 @@
  .social-block li a:hover, .social-block li a:focus {
    color: #000;
  }
- 
+
  .btn.active.focus,
  .btn.active:focus,
  .btn.focus,
@@ -88,7 +88,7 @@
  .btn:focus {
    outline: none;
  }
- 
+
  .btn {
    border: 0;
    border-radius: 0;
@@ -109,7 +109,7 @@
        -ms-transform: scale(0.9);
            transform: scale(0.9);
  }
- 
+
  .form-control {
    border-radius: 0;
    box-shadow: none;
@@ -123,7 +123,7 @@
    border-color: #ccc;
    background-color: #f8f8f8;
  }
- 
+
  .valign-center {
    display: -webkit-box;
    display: -webkit-flex;
@@ -134,11 +134,11 @@
        -ms-flex-align: center;
            align-items: center;
  }
- 
+
  .section {
    padding: 70px 0;
  }
- 
+
  .section-title {
    color: #313131;
    letter-spacing: 1px;
@@ -146,48 +146,48 @@
    text-transform: uppercase;
    text-align: center;
  }
- 
- /* 
+
+ /*
   * 3.0 Helper Class
   */
- /* 
+ /*
   * 3.1 Helper Class: font-weight
   */
  .font-300 {
    font-weight: 300;
  }
- 
+
  .font-400 {
    font-weight: 400;
  }
- 
+
  .font-700 {
    font-weight: 700;
  }
- 
- /* 
+
+ /*
   * 3.2 Helper Class: margin
   */
  .mt0 {
    margin-top: 0;
  }
- 
+
  .mb0 {
    margin-bottom: 0;
  }
- 
+
  .mt20 {
    margin-top: 20px;
  }
- 
- /* 
+
+ /*
   * 3.3 Helper Class: list
   */
  .list-arrow-right li::before {
    content: "\f3d3";
  }
- 
- /* 
+
+ /*
   * 3.4 Helper Class: button
   */
  .btn-white {
@@ -198,7 +198,7 @@
    color: #000;
    background-color: #fff;
  }
- 
+
  .btn-black {
    color: #fff;
    background-color: #000;
@@ -207,8 +207,8 @@
    color: #fff;
    background-color: #000;
  }
- 
- /* 
+
+ /*
   * 3.5 Helper Class: background
   */
  .bg-image, .bg-image-1, .bg-image-2 {
@@ -222,26 +222,26 @@
    bottom: 0;
    left: 0;
  }
- 
+
  .bg-image-1 {
    background: url(../images/backgrounds/bg-1.png) no-repeat center center/cover;
  }
  .bg-image-1::before {
    background-color: rgba(0, 0, 0, 0.7);
  }
- 
+
  .bg-image-2 {
    background: url(../images/backgrounds/bg-2.png) no-repeat center bottom/cover;
  }
  .bg-image-2::before {
    background-color: rgba(0, 0, 0, 0.7);
  }
- 
+
  @media (min-width: 768px) {
    .section {
      padding: 90px 0;
    }
- 
+
    .section-title {
      color: #313131;
      letter-spacing: 1px;
@@ -250,7 +250,7 @@
      text-align: left;
    }
  }
- /* 
+ /*
   * 4.0 Navigation
   */
  .navbar-custom {
@@ -279,7 +279,7 @@
  .navbar-custom .navbar-nav > .active > a {
    border-color: rgba(255, 255, 255, 0.5);
  }
- 
+
  .navbar-toggle {
    border: 0;
    border-radius: 0;
@@ -288,14 +288,14 @@
  .navbar-toggle .icon-bar {
    background-color: #fff;
  }
- 
+
  .navbar-solid {
    background-color: #000 !important;
    padding: 0 !important;
    -webkit-transition: all 0.2s linear 0s;
            transition: all 0.2s linear 0s;
  }
- 
+
  .site-branding {
    float: left;
    margin-top: 0;
@@ -312,8 +312,8 @@
  .site-branding .logo:focus, .site-branding .logo:hover {
    text-decoration: none;
  }
- 
- /* 
+
+ /*
   * 5.0 Site Header
   */
  .site-header {
@@ -322,7 +322,7 @@
    min-height: 100vh;
    position: relative;
    text-align: center;
-   background: url(../images/backgrounds/header.png) no-repeat center center/cover;
+   background: no-repeat center center/cover;
    display: table;
  }
  .site-header::before {
@@ -341,7 +341,8 @@
    text-transform: uppercase;
    width: 100%;
    z-index: 1;
-   padding: 0 15px;
+   /* padding: 0 15px; */
+   padding: 0;
    display: table-cell;
    vertical-align: middle;
    height: 100vh;
@@ -360,23 +361,28 @@
    margin-bottom: 10px;
    font-weight: 300;
  }
- 
+ .site-header .intro video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
  @media (min-width: 768px) {
    .navbar-custom {
-     background-color: #fff;
+     background-color: #fff !important;
      padding-top: 30px;
    }
- 
+
    .site-branding {
      margin-top: 6px;
      margin-left: 0;
    }
  }
- /* 
+ /*
   * 6.0 Section
   */
- /* 
-  * 6.1 Section: About 
+ /*
+  * 6.1 Section: About
   */
  .about .section-title {
    margin: 0 0 25px;
@@ -384,8 +390,8 @@
  .about figure {
    margin-bottom: 25px;
  }
- 
- /* 
+
+ /*
   * 6.2 Section: Facts
   */
  .facts i {
@@ -397,8 +403,8 @@
    text-align: center;
    font-weight: 400;
  }
- 
- /* 
+
+ /*
   * 6.3 Section: Speaker
   */
  .speaker {
@@ -417,19 +423,19 @@
  .speaker img:hover {
    opacity: .7;
  }
- 
- /* 
+
+ /*
   * 6.4 Section: Registration & Pricing
   */
- /* 
+ /*
   * 6.5 Section: Contribution
   */
  .contribution {
    text-align: center;
    color: #fff;
  }
- 
- /* 
+
+ /*
   * 6.6 Section: Schedule
   */
  .schedule-box {
@@ -449,8 +455,8 @@
    left: 5px;
    border: 1px solid #fff;
  }
- 
- /* 
+
+ /*
   * 6.7 Section: Schedule
   */
  .partner {
@@ -492,8 +498,8 @@
  .partner .partner-box-8 {
    background: url(../images/partner/partner-8.png) no-repeat center center/contain;
  }
- 
- /* 
+
+ /*
   * 6.8 Section: FAQ
   */
  .faq .panel-heading {
@@ -530,8 +536,8 @@
    text-decoration: none;
    padding: 15px 15px 15px 35px;
  }
- 
- /* 
+
+ /*
   * 6.9 Section: photos
   */
  .grid {
@@ -544,7 +550,7 @@
    display: block;
    clear: both;
  }
- 
+
  .grid-item {
    float: left;
    overflow: hidden;
@@ -552,20 +558,20 @@
    margin: 0;
    width: 100%;
  }
- 
+
  @media (min-width: 768px) {
    .grid-item-sm-6 {
      width: 50%;
    }
- 
+
    .grid-item-sm-3 {
      width: 25%;
    }
- 
+
    .section-title {
      margin: 0 0 30px;
    }
- 
+
    figure {
      margin-bottom: 0;
    }
@@ -574,16 +580,16 @@
    .schedule-box {
      margin: 0;
    }
- 
+
    .grid-item-md-6 {
      width: 50%;
    }
- 
+
    .grid-item-md-3 {
      width: 25%;
    }
  }
- /* 
+ /*
   * 7.0 Site-footer
   */
  .site-footer {
@@ -605,4 +611,3 @@
  .site-footer .social-block li a:hover, .site-footer .social-block li a:focus {
    opacity: 0.8;
  }
- 

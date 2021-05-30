@@ -14,10 +14,10 @@ function handleTopNavAnimation() {
 	var top=$(window).scrollTop();
 
 	if(top>10){
-		$('#site-nav').addClass('navbar-solid'); 
+		$('#site-nav').addClass('navbar-solid');
 	}
 	else{
-		$('#site-nav').removeClass('navbar-solid'); 
+		$('#site-nav').removeClass('navbar-solid');
 	}
 }
 
@@ -27,7 +27,7 @@ function handleTopNavAnimation() {
 
 $('#registration-form').submit(function(e){
     e.preventDefault();
-    
+
     var postForm = { //Fetch form data
             'fname'     : $('#registration-form #fname').val(),
             'lname'     : $('#registration-form #lname').val(),
@@ -67,9 +67,3 @@ $('#registration-form').submit(function(e){
 */
 
 smoothScroll.init();
-
-App.controller('main-controller', ['$scope', function($scope) {
-
-  $scope.date = new Date();
-
-}
